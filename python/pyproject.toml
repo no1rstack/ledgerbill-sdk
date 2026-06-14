@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "ledgerbill-sdk"
-version = "0.1.2"
+version = "0.1.4"
 description = "Official Python client for LedgerBill API"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -30,7 +30,10 @@ classifiers = [
 Homepage = "https://ledgerbill.app"
 Repository = "https://github.com/no1rstack/ledgerbill-sdk.git"
 Issues = "https://noirstack.com/support"
+NPM = "https://www.npmjs.com/package/@noirstack/ledgerbill-sdk"
+"VS Code Marketplace" = "https://marketplace.visualstudio.com/items?itemName=LedgerBill.ledgerbill"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/ledgerbill_sdk"]
+
 
