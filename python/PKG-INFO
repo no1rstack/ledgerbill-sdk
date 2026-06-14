@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: ledgerbill-sdk
+Version: 0.1.0
+Summary: Official Python client for LedgerBill API
+Project-URL: Homepage, https://github.com/NoirStackLLC/ledgerbill
+Project-URL: Repository, https://github.com/NoirStackLLC/ledgerbill
+Project-URL: Issues, https://github.com/NoirStackLLC/ledgerbill/issues
+Author: Noir Stack LLC
+Maintainer: Noir Stack LLC
+License-Expression: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Requires-Dist: requests>=2.32.0
+Description-Content-Type: text/markdown
+
+# ledgerbill-sdk
+
+Official Python SDK scaffold for LedgerBill.
+
+## Install (local)
+
+```bash
+pip install -e sdk/python
+```
+
+## Usage
+
+```python
+from ledgerbill_sdk import LedgerBillClient
+
+client = LedgerBillClient(
+    base_url="http://localhost:3107",
+    tenant_id="tenant_123",
+    api_key="lb_your_api_key"
+)
+
+plans = client.get_pricing_plans()
+preview = client.preview_usage(
+    customer_id="cus_123",
+    feature_key="events_processed",
+    amount=1000,
+)
+```

@@ -1,0 +1,34 @@
+{
+  "name": "@noirstack/ledgerbill-sdk",
+  "version": "0.1.2",
+  "description": "Official TypeScript client for LedgerBill API",
+  "author": "Noir Stack LLC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/no1rstack/ledgerbill-sdk.git",
+    "directory": "."
+  },
+  "bugs": {
+    "url": "https://github.com/NoirStackLLC/ledgerbill/issues"
+  },
+  "homepage": "https://ledgerbill.app",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npx --yes tsc -p tsconfig.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT"
+}

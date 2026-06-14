@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ledgerbill-sdk"
+version = "0.1.2"
+description = "Official Python client for LedgerBill API"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+  { name = "Noir Stack LLC" }
+]
+maintainers = [
+  { name = "Noir Stack LLC" }
+]
+dependencies = [
+  "requests>=2.32.0"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[project.urls]
+Homepage = "https://github.com/NoirStackLLC/ledgerbill"
+Repository = "https://github.com/NoirStackLLC/ledgerbill"
+Issues = "https://github.com/NoirStackLLC/ledgerbill/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ledgerbill_sdk"]
+
