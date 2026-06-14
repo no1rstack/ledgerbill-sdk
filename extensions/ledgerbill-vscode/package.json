@@ -5,7 +5,7 @@
   "name": "ledgerbill",
   "displayName": "Ledger Bill",
   "description": "Build and validate LedgerBill usage-metering integrations from Visual Studio Code.",
-  "version": "0.1.1",
+  "version": "0.1.6",
   "publisher": "LedgerBill",
   "license": "MIT",
   "author": {
