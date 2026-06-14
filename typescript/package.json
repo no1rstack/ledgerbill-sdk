@@ -3,7 +3,7 @@
   "_copyright": "Noir Stack LLC",
   "_author": "Hira Barton",
   "name": "@noirstack/ledgerbill-sdk",
-  "version": "0.1.5",
+  "version": "0.1.8",
   "description": "Official TypeScript client for LedgerBill API",
   "author": "Noir Stack LLC",
   "repository": {

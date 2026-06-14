@@ -80,7 +80,7 @@ jobs:
             STATUS_TEXT="Extension publish completed with issues"
           fi
 
-          CONTENT="$STATUS_EMOJI **$STATUS_TEXT**\nRepository: \`${{ github.repository }}\`\nRef: \`$REF_NAME\`\nEvent: \`$EVENT_NAME\`\nVS Code Marketplace: \`$EXT_RESULT\`\nRun: $RUN_URL"
+          CONTENT="$STATUS_EMOJI **$STATUS_TEXT**\nRepository: ${{ github.repository }}\nRef: $REF_NAME\nEvent: $EVENT_NAME\nVS Code Marketplace: $EXT_RESULT\nRun: $RUN_URL"
           CONTENT_ESCAPED=$(printf '%s' "$CONTENT" | python3 -c 'import json,sys; print(json.dumps(sys.stdin.read()))')
           echo "json={\"content\":$CONTENT_ESCAPED}" >> "$GITHUB_OUTPUT"
 
