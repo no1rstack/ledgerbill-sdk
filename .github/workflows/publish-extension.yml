@@ -88,7 +88,8 @@ jobs:
         if: env.DISCORD_PUBLISH_WEBHOOK_URL != ''
         shell: bash
         run: |
+          PAYLOAD='${{ steps.payload.outputs.json }}'
           curl -sS -X POST \
             -H "Content-Type: application/json" \
-            -d "${{ steps.payload.outputs.json }}" \
+            --data "$PAYLOAD" \
             "$DISCORD_PUBLISH_WEBHOOK_URL"

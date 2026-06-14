@@ -106,15 +106,16 @@ jobs:
             STATUS_TEXT="SDK publish completed with issues"
           fi
 
-          CONTENT="$STATUS_EMOJI **$STATUS_TEXT**\nRepository: ${{ github.repository }}\nRef: $REF_NAME\nEvent: $EVENT_NAME\nTypeScript (npm): $TS_RESULT\nPython (PyPI): $PY_RESULT\nRun: $RUN_URL"
-          CONTENT_ESCAPED=$(printf '%s' "$CONTENT" | python3 -c 'import json,sys; print(json.dumps(sys.stdin.read()))')
-          echo "json={\"content\":$CONTENT_ESCAPED}" >> "$GITHUB_OUTPUT"
+          CONTENT="${STATUS_EMOJI} **${STATUS_TEXT}**\nRepository: ${{ github.repository }}\nRef: ${REF_NAME}\nEvent: ${EVENT_NAME}\nTypeScript (npm): ${TS_RESULT}\nPython (PyPI): ${PY_RESULT}\nRun: ${RUN_URL}"
+          PAYLOAD=$(printf '{"content":%s}' "$(printf '%s' "$CONTENT" | python3 -c 'import json,sys; print(json.dumps(sys.stdin.read()))')")
+          echo "json=$PAYLOAD" >> "$GITHUB_OUTPUT"
 
       - name: Send Discord webhook
         if: env.DISCORD_PUBLISH_WEBHOOK_URL != ''
         shell: bash
         run: |
+          PAYLOAD='${{ steps.payload.outputs.json }}'
           curl -sS -X POST \
             -H "Content-Type: application/json" \
-            -d "${{ steps.payload.outputs.json }}" \
+            --data "$PAYLOAD" \
             "$DISCORD_PUBLISH_WEBHOOK_URL"
