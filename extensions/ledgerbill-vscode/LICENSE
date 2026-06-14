@@ -1,21 +1,62 @@
-MIT License
+Business Source License 1.1
 
-Copyright (c) 2026 Noir Stack
+License text: https://mariadb.com/bsl11/
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Parameters:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Licensor: Noir Stack LLC
+Licensed Work: LedgerBill SDKs (TypeScript, Python) and VS Code Extension
+Change Date: 2030-06-14
+Change License: Apache License 2.0
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+For information about alternative licensing arrangements for the Licensed Work,
+please contact: legal@noirstack.com
+
+Notice
+
+The Business Source License (this document, or the "License") is not an open
+source license. However, the Licensed Work will eventually be made available
+under an open source License, as stated in this License.
+
+For license terms, please visit: https://mariadb.com/bsl11/
+For a summary: Commercial use is restricted until the Change Date (2030-06-14),
+after which this license automatically converts to Apache License 2.0.
+
+---
+
+BUSINESS SOURCE LICENSE 1.1
+
+Terms
+
+The Licensor hereby grants you the right to copy, modify, create derivative
+works, redistribute, and make non-production use of the Licensed Work. The
+Licensor may make an Additional Use Grant, above, permitting limited
+production use.
+
+Effective on the Change Date, or the fourth anniversary of the first publicly
+available distribution of a specific version of the Licensed Work under this
+License, whichever comes first.
+
+If your use of the Licensed Work doesn't comply with the requirements currently
+in effect, you must purchase a commercial license from the Licensor or refrain
+from using the Licensed Work.
+
+All copies of original and modified Licensed Work, and derivative works of the
+Licensed Work, are subject to this License. This License applies separately for
+each version of the Licensed Work and the Change Date may vary for each version
+of the Licensed Work released by Licensor.
+
+You may not use or distribute the Licensed Work except in compliance with the
+License. Unless the License explicitly states otherwise, any attempt to
+sublicense, assign, or transfer any of the rights, obligations or
+responsibilities under this License is void and will automatically terminate
+your rights under this License.
+
+If you have not previously received a copy of this License for a version of the
+Licensed Work, you may obtain a copy of the License at:
+https://mariadb.com/bsl11/
+
+---
+
+Authored and maintained by Noir Stack LLC
+© 2026 Noir Stack LLC. All rights reserved.
