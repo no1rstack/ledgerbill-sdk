@@ -90,5 +90,5 @@ jobs:
         run: |
           curl -sS -X POST \
             -H "Content-Type: application/json" \
-            -d '${{ steps.payload.outputs.json }}' \
+            -d "${{ steps.payload.outputs.json }}" \
             "$DISCORD_PUBLISH_WEBHOOK_URL"
