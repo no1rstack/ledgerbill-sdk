@@ -50,4 +50,4 @@ The public API taxonomy expected in `/api/openapi.json` is:
 
 ## Support
 
-- Issues and support: https://noirstack.com/support
+- Issues: https://github.com/no1rstack/ledgerbill-sdk/issues

@@ -29,7 +29,6 @@ classifiers = [
 [project.urls]
 Homepage = "https://ledgerbill.app"
 Repository = "https://github.com/no1rstack/ledgerbill-sdk.git"
-Issues = "https://noirstack.com/support"
 Issues = "https://github.com/no1rstack/ledgerbill-sdk/issues"
 NPM = "https://www.npmjs.com/package/@noirstack/ledgerbill-sdk"
 "VS Code Marketplace" = "https://marketplace.visualstudio.com/items?itemName=LedgerBill.ledgerbill"

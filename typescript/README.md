@@ -59,4 +59,4 @@ const preview = await client.previewUsage({
 
 ## Support
 
-- Issues and support: https://noirstack.com/support
+- Issues: https://github.com/no1rstack/ledgerbill-sdk/issues
