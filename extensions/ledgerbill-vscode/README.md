@@ -83,7 +83,7 @@ npm run publish
 - Issues: https://github.com/no1rstack/ledgerbill-sdk/issues
 - Support: https://github.com/no1rstack/ledgerbill-sdk/issues
 - LinkedIn: https://www.linkedin.com/company/113360045/
-- Source: https://github.com/NoirStackLLC
+- Source: https://github.com/no1rstack/ledgerbill-sdk/tree/main/extensions/ledgerbill-vscode
 
 ## Privacy and Security
 

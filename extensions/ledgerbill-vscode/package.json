@@ -15,7 +15,7 @@
   "homepage": "https://ledgerbill.app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NoirStackLLC",
+    "url": "https://github.com/no1rstack/ledgerbill-sdk.git",
     "directory": "extensions/ledgerbill-vscode"
   },
   "bugs": {
