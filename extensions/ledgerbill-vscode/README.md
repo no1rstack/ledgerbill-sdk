@@ -125,7 +125,7 @@ This project is licensed under the **Business Source License 1.1 (BSL)**.
 - **Commercial Use:** Restricted until Change Date
 - **After Change Date:** Automatically converts to Apache 2.0
 
-For more details, see [LICENSE](../../LICENSE).
+For more details, see [LICENSE](LICENSE).
 
 © 2026 **Noir Stack LLC**. All rights reserved.
 
