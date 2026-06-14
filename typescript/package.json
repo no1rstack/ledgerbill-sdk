@@ -9,7 +9,7 @@
     "directory": "."
   },
   "bugs": {
-    "url": "https://noirstack.com/support"
+    "url": "https://github.com/no1rstack/ledgerbill-sdk/issues"
   },
   "homepage": "https://ledgerbill.app",
   "type": "module",
@@ -32,3 +32,4 @@
   },
   "license": "MIT"
 }
+
