@@ -2,6 +2,10 @@
 requires = ["hatchling>=1.25.0"]
 build-backend = "hatchling.build"
 
+# Watermark: e47a3f9c2d1b8e6a5f4c3b2a1d0e9f8a
+# Copyright: Noir Stack LLC
+# Author: Hira Barton
+
 [project]
 name = "ledgerbill-sdk"
 version = "0.1.5"

@@ -1,6 +1,9 @@
 {
+  "_watermark": "e47a3f9c2d1b8e6a5f4c3b2a1d0e9f8a",
+  "_copyright": "Noir Stack LLC",
+  "_author": "Hira Barton",
   "name": "@noirstack/ledgerbill-sdk",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "description": "Official TypeScript client for LedgerBill API",
   "author": "Noir Stack LLC",
   "repository": {
@@ -9,8 +12,17 @@
     "directory": "."
   },
   "bugs": {
-    "url": "https://github.com/no1rstack/ledgerbill-sdk/issues"
+    "url": "https://github.com/no1rstack/ledgerbill-sdk/discussions"
   },
+  "keywords": [
+    "ledgerbill",
+    "billing",
+    "usage-metering",
+    "saas",
+    "stripe",
+    "openapi",
+    "typescript-sdk"
+  ],
   "homepage": "https://ledgerbill.app",
   "type": "module",
   "main": "./dist/index.js",

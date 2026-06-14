@@ -1,0 +1,28 @@
+{
+  "LedgerBill usage event": {
+    "prefix": "ledgerbill-usage",
+    "description": "Send a usage event to LedgerBill.",
+    "body": [
+      "const response = await fetch(`${process.env.LEDGERBILL_BASE_URL || 'https://ledgerbill.app'}/api/v1/usage`, {",
+      "  method: 'POST',",
+      "  headers: {",
+      "    'content-type': 'application/json',",
+      "    'x-api-key': process.env.LEDGERBILL_API_KEY,",
+      "    'idempotency-key': crypto.randomUUID(),",
+      "  },",
+      "  body: JSON.stringify({",
+      "    customerId: '${1:cus_example}',",
+      "    featureKey: '${2:api_calls}',",
+      "    amount: ${3:1},",
+      "    timestamp: new Date().toISOString(),",
+      "  }),",
+      "});",
+      "",
+      "if (!response.ok) {",
+      "  throw new Error(`LedgerBill usage failed: ${response.status} ${await response.text()}`);",
+      "}",
+      "",
+      "const usage = await response.json();"
+    ]
+  }
+}

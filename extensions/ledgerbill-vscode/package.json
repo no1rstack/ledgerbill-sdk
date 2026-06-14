@@ -1,0 +1,222 @@
+{
+  "_watermark": "e47a3f9c2d1b8e6a5f4c3b2a1d0e9f8a",
+  "_copyright": "Noir Stack LLC",
+  "_author": "Hira Barton",
+  "name": "ledgerbill",
+  "displayName": "Ledger Bill",
+  "description": "Build and validate LedgerBill usage-metering integrations from Visual Studio Code.",
+  "version": "0.1.1",
+  "publisher": "LedgerBill",
+  "license": "MIT",
+  "author": {
+    "name": "LedgerBill",
+    "url": "https://ledgerbill.app"
+  },
+  "homepage": "https://ledgerbill.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NoirStackLLC",
+    "directory": "extensions/ledgerbill-vscode"
+  },
+  "bugs": {
+    "url": "https://github.com/no1rstack/ledgerbill-sdk/issues"
+  },
+  "icon": "media/icon.png",
+  "galleryBanner": {
+    "color": "#0F172A",
+    "theme": "dark"
+  },
+  "categories": [
+    "Other",
+    "Testing",
+    "Snippets"
+  ],
+  "keywords": [
+    "ledgerbill",
+    "billing",
+    "usage",
+    "metering",
+    "stripe",
+    "saas",
+    "api"
+  ],
+  "qna": "marketplace",
+  "sponsor": {
+    "url": "https://noirstack.com"
+  },
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "main": "./out/src/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "LedgerBill",
+      "properties": {
+        "ledgerbill.baseUrl": {
+          "type": "string",
+          "default": "https://ledgerbill.app",
+          "markdownDescription": "Base URL for the customer-facing LedgerBill API."
+        },
+        "ledgerbill.tenantId": {
+          "type": "string",
+          "default": "",
+          "markdownDescription": "Optional tenant ID used for browser-session scoped calls and generated environment snippets."
+        },
+        "ledgerbill.defaultFeatureKey": {
+          "type": "string",
+          "default": "api_calls",
+          "markdownDescription": "Default feature key used when previewing or reporting usage from VS Code."
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "ledgerbill.configureApiKey",
+        "title": "LedgerBill: Set API Key",
+        "category": "LedgerBill",
+        "icon": "$(key)"
+      },
+      {
+        "command": "ledgerbill.clearApiKey",
+        "title": "LedgerBill: Clear API Key",
+        "category": "LedgerBill",
+        "icon": "$(trash)"
+      },
+      {
+        "command": "ledgerbill.checkConnection",
+        "title": "LedgerBill: Check Connection",
+        "category": "LedgerBill",
+        "icon": "$(pulse)"
+      },
+      {
+        "command": "ledgerbill.openApiReference",
+        "title": "LedgerBill: Open API Reference",
+        "category": "LedgerBill",
+        "icon": "$(globe)"
+      },
+      {
+        "command": "ledgerbill.previewUsage",
+        "title": "LedgerBill: Preview Usage Rating",
+        "category": "LedgerBill",
+        "icon": "$(beaker)"
+      },
+      {
+        "command": "ledgerbill.reportUsage",
+        "title": "LedgerBill: Report Usage Event",
+        "category": "LedgerBill",
+        "icon": "$(send)"
+      },
+      {
+        "command": "ledgerbill.insertEnvTemplate",
+        "title": "LedgerBill: Insert .env Template",
+        "category": "LedgerBill",
+        "icon": "$(file-code)"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "ledgerbill",
+          "title": "LedgerBill",
+          "icon": "media/icon.png"
+        }
+      ]
+    },
+    "views": {
+      "ledgerbill": [
+        {
+          "id": "ledgerbill.status",
+          "name": "Connection"
+        }
+      ]
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "ledgerbill.checkConnection",
+          "when": "view == ledgerbill.status",
+          "group": "navigation"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "ledgerbill.configureApiKey"
+        },
+        {
+          "command": "ledgerbill.clearApiKey"
+        },
+        {
+          "command": "ledgerbill.checkConnection"
+        },
+        {
+          "command": "ledgerbill.openApiReference"
+        },
+        {
+          "command": "ledgerbill.previewUsage"
+        },
+        {
+          "command": "ledgerbill.reportUsage"
+        },
+        {
+          "command": "ledgerbill.insertEnvTemplate"
+        }
+      ]
+    },
+    "snippets": [
+      {
+        "language": "typescript",
+        "path": "./snippets/typescript.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      }
+    ],
+    "walkthroughs": [
+      {
+        "id": "ledgerbill.getStarted",
+        "title": "Connect LedgerBill",
+        "description": "Configure your tenant API key and preview usage metering from VS Code.",
+        "steps": [
+          {
+            "id": "ledgerbill.setApiKey",
+            "title": "Store your tenant API key",
+            "description": "Save the LedgerBill API key in VS Code Secret Storage.",
+            "completionEvents": [
+              "onCommand:ledgerbill.configureApiKey"
+            ],
+            "media": {
+              "markdown": "walkthrough.md"
+            }
+          },
+          {
+            "id": "ledgerbill.previewUsage",
+            "title": "Preview a usage event",
+            "description": "Run a rating preview without writing billable usage.",
+            "completionEvents": [
+              "onCommand:ledgerbill.previewUsage"
+            ],
+            "media": {
+              "markdown": "walkthrough.md"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "tsc --noEmit -p ./",
+    "test": "npm run compile && node ./out/test/apiClient.test.js",
+    "vscode:prepublish": "npm run compile",
+    "package": "node ./node_modules/@vscode/vsce/vsce package --no-dependencies",
+    "publish": "node ./node_modules/@vscode/vsce/vsce publish"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "@types/vscode": "^1.92.0",
+    "@vscode/vsce": "^3.6.0",
+    "typescript": "^5.8.3"
+  }
+}

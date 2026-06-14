@@ -1,3 +1,19 @@
+<!-- ╔════════════════════════════════════════════════════════════════════╗
+     ║  🔐 Noir Stack LLC - Business Source License 1.1 (BSL)           ║
+     ║  Watermark: e47a3f9c2d1b8e6a5f4c3b2a1d0e9f8a (Hira Barton)      ║
+     ║  © 2026 Noir Stack LLC. All rights reserved.                      ║
+     ╚════════════════════════════════════════════════════════════════════╝ -->
+
+```
+   ███╗   ██╗ ██████╗ ██╗██████╗     ███████╗████████╗ █████╗  ██████╗██╗  ██╗
+   ████╗  ██║██╔═══██╗██║██╔══██╗    ██╔════╝╚══██╔══╝██╔══██╗██╔════╝██║ ██╔╝
+   ██╔██╗ ██║██║   ██║██║██████╔╝    ███████╗   ██║   ███████║██║     █████╔╝
+   ██║╚██╗██║██║   ██║██║██╔══██╗    ╚════██║   ██║   ██╔══██║██║     ██╔═██╗
+   ██║ ╚████║╚██████╔╝██║██║  ██║    ███████║   ██║   ██║  ██║╚██████╗██║  ██╗
+   ╚═╝  ╚═══╝ ╚═════╝ ╚═╝╚═╝  ╚═╝    ╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
+    LedgerBill SDK | Python | BSL 1.1 | © Noir Stack LLC
+```
+
 # ledgerbill-sdk
 
 Official Python SDK scaffold for LedgerBill.
@@ -48,6 +64,23 @@ The public API taxonomy expected in `/api/openapi.json` is:
 - `Audit & Governance`
 - `Replay Operations`
 
-## Support
+## Support & Discussion
 
 - Issues: https://github.com/no1rstack/ledgerbill-sdk/issues
+- Discussions: https://github.com/no1rstack/ledgerbill-sdk/discussions
+- Wiki: https://github.com/no1rstack/ledgerbill-sdk/wiki
+
+## License
+
+This project is licensed under the **Business Source License 1.1 (BSL)**.
+
+- **Change Date:** 2030-06-14 (4 years from initial release)
+- **Change License:** Apache License 2.0
+- **Commercial Use:** Restricted until Change Date
+- **After Change Date:** Automatically converts to Apache 2.0
+
+For more details, see [LICENSE](./LICENSE).
+
+© 2026 **Noir Stack LLC**. All rights reserved.
+
+For alternative licensing arrangements, contact: legal@noirstack.com
