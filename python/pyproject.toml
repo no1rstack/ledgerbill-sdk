@@ -27,9 +27,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/NoirStackLLC/ledgerbill"
-Repository = "https://github.com/NoirStackLLC/ledgerbill"
-Issues = "https://github.com/NoirStackLLC/ledgerbill/issues"
+Homepage = "https://ledgerbill.app"
+Repository = "https://github.com/no1rstack/ledgerbill-sdk.git"
+Issues = "https://noirstack.com/support"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/ledgerbill_sdk"]

@@ -4,6 +4,13 @@ Official Python SDK scaffold for LedgerBill.
 
 The SDK aligns to the canonical OpenAPI source (`src/openapi.ts`) served at `/api/openapi.json`.
 
+## Package listings
+
+- npm: https://www.npmjs.com/package/@noirstack/ledgerbill-sdk
+- PyPI: https://pypi.org/project/ledgerbill-sdk/
+- VS Code Marketplace: https://marketplace.visualstudio.com/items?itemName=LedgerBill.ledgerbill
+- Website: https://ledgerbill.app
+
 ## Install (local)
 
 ```bash
@@ -40,3 +47,7 @@ The public API taxonomy expected in `/api/openapi.json` is:
 - `Policy Administration`
 - `Audit & Governance`
 - `Replay Operations`
+
+## Support
+
+- Issues and support: https://noirstack.com/support

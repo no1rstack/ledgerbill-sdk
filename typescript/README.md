@@ -4,6 +4,13 @@ Official TypeScript client scaffold for LedgerBill.
 
 The SDK contract is generated from the canonical OpenAPI source (`src/openapi.ts`) and exported to `/api/openapi.json`.
 
+## Package listings
+
+- npm: https://www.npmjs.com/package/@noirstack/ledgerbill-sdk
+- PyPI: https://pypi.org/project/ledgerbill-sdk/
+- VS Code Marketplace: https://marketplace.visualstudio.com/items?itemName=LedgerBill.ledgerbill
+- Website: https://ledgerbill.app
+
 ## Build flow
 
 From repository root:
@@ -49,3 +56,7 @@ const preview = await client.previewUsage({
    - `Policy Administration`
    - `Audit & Governance`
    - `Replay Operations`
+
+## Support
+
+- Issues and support: https://noirstack.com/support
