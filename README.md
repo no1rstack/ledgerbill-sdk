@@ -24,3 +24,9 @@ This repository includes GitHub Actions workflow `.github/workflows/publish-sdks
 
 - `NPM_TOKEN` — npm automation token with publish permission for `@noirstack/ledgerbill-sdk`
 - `PYPI_API_TOKEN` — PyPI token for `ledgerbill-sdk`
+- `DISCORD_PUBLISH_WEBHOOK_URL` — Discord webhook URL for release notifications
+
+### Notes
+
+- npm automation tokens expire; rotate `NPM_TOKEN` before expiry to avoid failed publish runs.
+- You can keep `TWINE_USERNAME`, `TWINE_PASSWORD`, and `TWINE_REPOSITORY_URL` as optional compatibility secrets, but this workflow only requires `PYPI_API_TOKEN`.
