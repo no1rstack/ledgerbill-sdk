@@ -1,0 +1,18 @@
+{
+  "name": "LedgerBill SDK",
+  "short_name": "LB SDK",
+  "description": "Official LedgerBill SDKs and tooling.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/extensions/ledgerbill-vscode/media/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
